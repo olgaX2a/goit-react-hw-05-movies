@@ -1,0 +1,10 @@
+.reviewList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+.reviewItem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
