@@ -35,8 +35,11 @@ function Reviews() {
           reviews.map(({ id, author, avatar, content }) => {
             return (
               <li key={id} className={styles.reviewItem}>
-                <h4>{author}</h4> <img src={avatar} alt={author} width="80" />
-                <p>{content}</p>
+                <img src={avatar} alt={author} width="80" />
+                <div className={styles.reviewTextInfo}>
+                  <h4>{author}</h4>
+                  <p>{content}</p>
+                </div>
               </li>
             );
           })
